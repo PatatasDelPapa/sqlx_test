@@ -1,0 +1,12 @@
+[package]
+name = "sqlx_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+serial_test = "2.0.0"
+sqlx = { version = "0.7.2", features = ["runtime-tokio", "tls-rustls", "postgres"] }
+tokio = { version = "1.32.0", features = ["rt-multi-thread", "macros", "sync"] }
